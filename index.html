@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CAM UI presentation at Mondeca</title>
+    <meta name="description" content="An approach to performance on the web">
+    <meta name="author" content="Alessandro Menduni">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/print.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body style="background-color: #34495e">
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section data-background="#F62459">
+                <h2>A web interface for the Content Annotation Manager</h2>
+                <h4>Internship at Mondeca</h4>
+                <p>
+                    <small>A presentation by Alessandro Menduni</small>
+                </p>
+            </section>
+            <section>
+                <h2>Combining knowledge with content</h2>
+                <ul>
+                    <li class="fragment">Mining</li>
+                    <li class="fragment">Annotating</li>
+                </ul>
+                <aside class="notes">Extraction + inferences + corporate knowledge</aside>
+            </section>
+            <section>
+                <section data-background="#F62459">
+                    <h2>CAM</h2>
+                </section>
+                <section>
+                    <h2>A web application and an annotation system</h2>
+                </section>
+                <section>
+                    <h2>Features in brief:</h2>
+                    <ul>
+                        <li class="fragment">Trigger annotation</li>
+                        <li class="fragment">Display results</li>
+                        <li class="fragment">Manual review</li>
+                        <li class="fragment">Troubleshooting</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Why a UI?</h2>
+                </section>
+                <section>
+                    <h2>to enable humans making use of this knowledge</h2>
+                </section>
+                <section>
+                    <h2>to enable non-tech people reviewing the results</h2>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>What are the challenges?</h2>
+                </section>
+                <section>
+                    <h2>UX / data visualization</h2>
+                </section>
+                <section>
+                    <h2>Difficult task</h2>
+                    <aside class="notes">Many failed in the past</aside>
+                </section>
+                <section>
+                    <h2>It's useful but not (yet) usable</h2>
+                </section>
+            </section>
+            <section data-background="#F62459">
+                <h2>THE PROBLEM</h2>
+            </section>
+            <section>
+                <section>
+                    <h2>There exist an "old" CAM</h2>
+                    <figure>
+                        <img src="assets/oldCAM.png" alt="">
+                    </figure>
+                </section>
+                <section>
+                    <h2>Demo-only</h2>
+                </section>
+                <section>
+                    <h2>Not meant to be "used"</h2>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Goals</h2>
+                </section>
+                <section>
+                    <h2>A dashboard for quick overview</h2>
+                </section>
+                <section>
+                    <h2>The human indexer</h2>
+                </section>
+                <section>
+                    <h2>Cool demos now, a real tool tomorrow</h2>
+                </section>
+            </section>
+            <section data-background="#F62459">
+                <h2>THE SOLUTION: DESIGN</h2>
+                <aside class="notes"> - analyze (2:19) - overview (3:25) - review (4:48) (6:15 filters) 
+                - UX considerations</aside>
+            </section>
+            <section data-background="#F62459">
+                <h2>THE SOLUTION: IMPLEMENTATION</h2>
+            </section>
+            <section>
+                <h2>Architecture</h2>
+                <img src="assets/architecture.png" alt="">
+            </section>
+            <section>
+                <section>
+                    <h2>Back-end new features</h2>
+                </section>
+                <section>
+                    <h2>Asynchronous annotation</h2>
+                </section>
+                <section>
+                    <h2>Parallelism</h2>
+                </section>
+                <section>
+                    <h2>Results caching</h2>
+                </section>
+                <section>
+                    <h2>Progress tracking</h2>
+                </section>
+            </section>
+            <section data-background="#F62459">
+                <h2>Future work</h2>
+            </section>
+            <section>
+                <h2>Persistence</h2>
+                <p>Will open up to new possibilities:</p>
+                <ul>
+                    <li class="fragment">Resume suspended activities</li>
+                    <li class="fragment">Long-term statistics</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Smart disambiguation</h2>
+                <p>Why delegating it to the user?</p>
+                <figure>
+                    <img style="max-height: 500px" src="assets/addtag.png" alt="">
+                </figure>
+            </section>
+            <section>
+                <section>
+                    <h2>Cluster-based aboutness assessment</h2>
+                    <img style="max-height: 500px" src="assets/cluster-tree.png" alt="">
+                </section>
+                <section>
+                    <h2>Cluster-based aboutness assessment</h2>
+                    <img src="assets/cluster-dashboard.png" alt="">
+                </section>
+            </section>
+            <section>
+                <h2>That's it!</h2>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+    </script>
+</body>
+
+</html>

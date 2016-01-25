@@ -1,0 +1,55 @@
+INTRO: 2min
+ - semantic + text mining = content augmentation
+ 	- Combining knowledge with content
+ 	 	- mining
+ 	 	- annotation
+ - What's CAM
+ 	- a web application and an annotation system
+ 	- app's features
+ 		- trigger annotation and display results
+ 		- reviewing and manually annotating 
+ 		- troubleshooting
+ - why a UI and what the challenges are
+ 	- enable humans making use of the knowledge (reasoning about it)
+ 	- enable non-tech people reviewing the results
+ 	- UX & data visualization
+ 	- difficult task, many failed in the past
+ 	- it's useful but not yet usable
+
+PROBLEM: 5min
+ - old CAM
+ 	- Demo-only
+ 	- Meant to show capabilities of the API, not to be "used"
+ - goals 
+	- dashboard for quick overview
+	- human indexer for a new market
+	- cool demos, in the future, real tool
+
+SOLUTION: DESIGN 10min
+ - features and core design
+ 	- a pool of resources, because different sources and workflows
+ 	- progress
+ 	-
+ - analyze 
+ 	- video 2:19
+ - overview
+ 	- video 3:25
+ - review
+ 	- video 4:48 (6:15 filters)
+ - UX considerations
+
+SOLUTION: IMPLEMENTATION 10min
+ - web stack
+ - back-end new features
+ 	- asynchronous indexation
+ 	- parallelism
+ 	- results caching
+ 	- progress tracking
+ - perf 
+
+FUTURE WORK
+ (if time permits)
+
+(backup plan)
+ - full demo (recording)
+ - animation as a tool
